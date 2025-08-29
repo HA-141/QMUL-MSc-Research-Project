@@ -1,0 +1,32 @@
+model:
+  input_dim: 1
+  num_layers : 1
+  hidden_dim: 256
+  output_dim: 1
+  tau: 0.01
+  dt: 0.001
+  sigma_rec: 0.01
+  excit_percent: 0.8
+
+training:
+  periods: [0.02, 0.05, 0.075, 0.1, 0.125, 0.15, 0.175, 0.2, 0.225, 0.25, 0.275, 0.3, 0.325, 0.35, 0.375, 0.4, 0.425, 0.45, 0.475, 0.5, 0.525, 0.55, 0.575, 0.6, 0.625, 0.65, 0.675, 0.7, 0.725, 0.75, 0.775, 0.8, 0.825, 0.85, 0.875, 0.9, 0.925, 0.95, 0.975, 1]
+  batch_size: 70
+  dataset_size: 10000
+  learning_rate: 0.001
+  epochs: 300
+  save_path: "PRNN_model.pth"
+  training_outputs: "PRNN_model.pt"
+  save_folder: "PRNN_model"
+  early_stopping_loss: 0.001
+
+validation: 
+  periods: [0.03, 0.08, 0.13, 0.18, 0.23, 0.28, 0.33, 0.38, 0.43, 0.48, 0.51, 0.53, 0.55, 0.58, 0.61, 0.63, 0.66, 0.69, 0.71, 0.73, 0.76, 0.79, 0.81, 0.83, 0.86, 0.89, 0.91, 0.93, 0.96, 0.99] # Example new periods
+  dataset_size: 2000 # Your desired validation dataset size
+  batch_size: 20 # Can be same or different
+
+test: 
+  num_samples: 53 # Number of samples for final testing
+  batch_size: 25 # Can be 1 for easy visualization, or a larger batch size
+
+plotting:
+  enable: True

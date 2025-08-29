@@ -1,0 +1,38 @@
+modelZRNN:
+  input_dim: 2
+  hidden_dim: 500
+  output_dim: 1
+  tau: 0.01
+  dt: 0.001
+  sigma_rec: 0.01
+  sigma_input: 0 # just for plot_IZRNN_temporal_dynamics.py
+  excit_percent: 0.8
+
+ZRNN_dir:
+  save_path: "ZRNN_model.pth"
+  save_folder: "ZRNN_model"
+
+modelPRNN:
+  input_dim: 1
+  hidden_dim: 256
+  output_dim: 1
+  num_layers : 1
+
+PRNN_dir:
+  save_path: "PRNN_model.pth"
+  save_folder: "PRNN_model"
+
+trainingZRNN:
+  periods: [0.02, 0.05, 0.075, 0.1, 0.125, 0.15, 0.166, 0.175, 0.2, 0.225, 0.25, 0.275, 0.3, 0.325, 0.333, 0.35, 0.375, 0.4, 0.425, 0.45, 0.475, 0.5, 0.525, 0.55, 0.575, 0.6, 0.625, 0.65, 0.675, 0.7, 0.725, 0.75, 0.775, 0.8, 0.825, 0.85, 0.875, 0.9, 0.925, 0.95, 0.975, 1]
+  dataset_size: 10000 
+  batch_size: 650 
+  learning_rate: 0.001
+  epochs: 500 
+  early_stopping_loss: 0.001  
+
+testing:
+  output_folder: "IZRNN_outputs"
+  periods: [1, 0.93, 0.86, 0.75, 0.65, 0.500, 0.46, 0.333, 0.250, 0.200, 0.166, 0.143, 0.125]
+
+plotting:
+  enable: True
