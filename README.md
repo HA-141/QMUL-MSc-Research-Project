@@ -1,5 +1,11 @@
 # QMUL-MSc-Research-Project
-A modified ZRNN model
+A modified ZRNN model based on Iran Roman's ZRNN:
+https://github.com/iranroman/ZemlianovaRNN
+
+This model is a PyTorch implementation of the model described in the 2024 paper "A Recurrent Neural Network for Rhythmic Timing" by Klavdia Zemlianova, Amit Bose, & John Rinzel. 
+The model has been adapted from Iran Roman's model to explore and demonstrate the neural mechanisms behind the generation of the context cue signal needed for internal rhythmic timing.
+
+
 
 Consult ReadMe.txt to learn how to run scripts
 
