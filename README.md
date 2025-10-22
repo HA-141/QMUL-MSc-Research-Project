@@ -24,9 +24,7 @@ PyYAML: 6.0.2
 You can install these libraries using this prompt:
 
 ```function test()
-  {
     pip install -r requirements.txt
-  }
 ```
 
 
