@@ -12,11 +12,6 @@ Features:
 - Scripts available to train and test ZRNN and PRNN models separately and then test the integrated IZRNN with the separately trained models
 - GPU support available through CUDA, to enable efficient training and performance evaluations based on hardware
 
-
-
-
-Consult ReadMe.txt to learn how to run scripts
-
 Python Libraries used: 
 PyTorch: 2.7.0+cu118
 NumPy: 2.2.6
@@ -25,3 +20,10 @@ SciPy: 1.15.3
 Matplotlib: 3.10.3
 Scikit-learn: 1.6.1
 PyYAML: 6.0.2
+
+Install libraries using command prompt:
+
+
+Consult ReadMe.txt to learn how to run scripts
+
+
