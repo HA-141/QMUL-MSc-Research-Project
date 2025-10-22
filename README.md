@@ -30,4 +30,14 @@ pip install -r requirements.txt
 
 Consult ReadMe.txt to learn how to run scripts
 
+### Reference
+@article{zemlianova2024recurrent,
+  title={A Recurrent Neural Network for Rhythmic Timing},
+  author={Zemlianova, Klavdia and Bose, Amitabha and Rinzel, John},
+  journal={bioRxiv},
+  pages={2024--05},
+  year={2024},
+  publisher={Cold Spring Harbor Laboratory}
+}
+
 
