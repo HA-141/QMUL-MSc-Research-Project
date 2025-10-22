@@ -22,7 +22,7 @@ Scikit-learn: 1.6.1
 PyYAML: 6.0.2
 
 You can install these libraries using this prompt:
-```pip install -r requirements.txt```
+```bash pip install -r requirements.txt```
 
 
 Consult ReadMe.txt to learn how to run scripts
