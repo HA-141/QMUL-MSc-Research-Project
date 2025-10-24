@@ -32,9 +32,33 @@ Consult ReadMe.txt to learn the order to how to run scripts
 
 ### Visualising PRNN model outputs
 
-Tracking training and validation loss: training and validation losses (calculated using mean-squared error) tracked how well the PRNN model learned the patterns and generalise to different beat-frequencies. Also allows us to verify whether the model is under/over-fitting.
+**Tracking training and validation loss:** training and validation losses (calculated using mean-squared error) tracked how well the PRNN model learned the patterns and generalise to different beat-frequencies. Also allows us to verify whether the model is under/over-fitting.
 
 ![Line graph showing training and validation losses over time (epochs).](https://github.com/HA-141/QMUL-MSc-Research-Project/blob/main/images/training_validation_loss_period_prediction_lstm.png)
+
+**Predicted vs True time period of a beat:** shows predictions of PRNN after testing, with a fitted regression line that can be compared against the ideal prediction line
+
+![Scatter graph showing predictions vs actual value.](https://github.com/HA-141/QMUL-MSc-Research-Project/blob/main/images/test_true_vs_predicted_period.png)
+
+**Predicted period of a sample throughout whole duration:** maps out the PRNN's predicted vs true period of six samples during the whole duration of the sample to analyse change in prediction over time
+
+![Line graphs showing prediction of the period for 6 samples over the whole sample duration](https://github.com/HA-141/QMUL-MSc-Research-Project/blob/main/images/test_true_vs_predicted_period.png)
+
+**Neuron activation analysis using raster plots:** raster plots showing neuron activity for the hidden layer. Colour coded to visualise positive and negative activations during synchronisation and continuation phase of the sample and samples with a period of 0.2 (left), 0.6 (middle), 0.95 (right).
+
+![Raster plot showing neuron activations of the hidden layer on a sample with a period of 0.2](https://github.com/HA-141/QMUL-MSc-Research-Project/blob/main/images/neuron_raster_peaks_period_0.2.png)
+![Raster plot showing neuron activations of the hidden layer on a sample with a period of 0.6](https://github.com/HA-141/QMUL-MSc-Research-Project/blob/main/images/neuron_raster_peaks_period_0.6.png)
+![Raster plot showing neuron activations of the hidden layer on a sample with a period of 0.95](https://github.com/HA-141/QMUL-MSc-Research-Project/blob/main/images/neuron_raster_peaks_period_0.95.png)
+
+**PCA Trajectory analysis:**
+    - **Left:** 2D PCA plot showing the trajectories of the PRNN's hidden layer neurons that is colour coded by stimulus frequency (from lowest to highest). Tap signals represented as black dots, yellow dots are the start of the sample trajectory, red dots represent end of sample trajectory. Dashed lines represent synchronisation phase and solid lines represent continuation phase.
+    - **Middle:** 3D PCA plot showing same trajectories as the 2D plot but in a higher dimensional space.
+    - **Right:** Line-graph displaying the relationship of the mean and standard-deviation of the hidden layer trajectories for each stimulus period.
+
+![2D PCA of neuronal trajectories](https://github.com/HA-141/QMUL-MSc-Research-Project/blob/main/images/pca_trajectories_2d_vibrant.png)
+![3D PCA of neuronal trajectories](https://github.com/HA-141/QMUL-MSc-Research-Project/blob/main/images/pca_trajectories_3d_vibrant.png)
+![Comparison of mean vs standard deviation of trajectory length at different periods](https://github.com/HA-141/QMUL-MSc-Research-Project/blob/main/images/trajectory_mean_vs_std_vibrant.png)
+
 
 
 ### Reference
