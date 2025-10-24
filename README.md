@@ -57,14 +57,14 @@ Consult ReadMe.txt to learn the order to how to run scripts
 
 <table style="width: 100%; border: none;">
   <tr>
-    <td style="width: 33%; text-align: center; border: none; padding: 5px;">
-      <img src="https://raw.githubusercontent.com/HA-141/QMUL-MSc-Research-Project/main/images/pca_trajectories_2d_vibrant.png" alt="2D PCA of neuronal trajectories" width="300" height="300"/>
+    <td style="width: 33%; text-align: center; border: none; padding: none;">
+      <img src="https://raw.githubusercontent.com/HA-141/QMUL-MSc-Research-Project/main/images/pca_trajectories_2d_vibrant.png" alt="2D PCA of neuronal trajectories" width="300" height="300">
     </td>
-    <td style="width: 33%; text-align: center; border: none; padding: 5px;">
-      <img src="https://raw.githubusercontent.com/HA-141/QMUL-MSc-Research-Project/main/images/pca_trajectories_3d_vibrant.png" alt="3D PCA of neuronal trajectories" width="300" height="300"/>
+    <td style="width: 33%; text-align: center; border: none; padding: none;">
+      <img src="https://raw.githubusercontent.com/HA-141/QMUL-MSc-Research-Project/main/images/pca_trajectories_3d_vibrant.png" alt="3D PCA of neuronal trajectories" width="300" height="300">
     </td>
-    <td style="width: 34%; text-align: center; border: none; padding: 5px;">
-      <img src="https://raw.githubusercontent.com/HA-141/QMUL-MSc-Research-Project/main/images/trajectory_mean_vs_std_vibrant.png" alt="Comparison of mean vs standard deviation of trajectory length" width="300" height="300"/>
+    <td style="width: 34%; text-align: center; border: none; padding: none;">
+      <img src="https://raw.githubusercontent.com/HA-141/QMUL-MSc-Research-Project/main/images/trajectory_mean_vs_std_vibrant.png" alt="Comparison of mean vs standard deviation of trajectory length" width="300" height="300">
     </td>
   </tr>
 </table>
