@@ -1,9 +1,6 @@
 # QMUL-MSc-Research-Project
-A modified ZRNN model based on [Iran Roman's ZRNN model](https://github.com/iranroman/ZemlianovaRNN)
-
 This is a PyTorch implementation of the model described in the 2024 paper ["A Recurrent Neural Network for Rhythmic Timing"](https://www.biorxiv.org/content/10.1101/2024.05.24.595797v1.abstract) by Klavdia Zemlianova, Amit Bose, & John Rinzel [1]. 
-
-The model has been adapted from Iran Roman's model to explore and demonstrate the neural mechanisms behind the generation of the context cue signal needed for internal rhythmic timing and see if it can also replicate similar patterns.
+The modified ZRNN model has been adapted from [Iran Roman's model](https://github.com/iranroman/ZemlianovaRNN) to explore and demonstrate the neural mechanisms behind the generation of the context cue signal needed for internal rhythmic timing and see if it can also replicate similar patterns.
 
 ### Features: 
 - A model, called the Period Predicting Recurrent Neural Network (PRNN) is used to count the period of a signal at each timestep, with its output being processed to produce the context cue signal
