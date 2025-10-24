@@ -55,7 +55,7 @@ Consult ReadMe.txt to learn the order to how to run scripts
     - **Middle:** 3D PCA plot showing same trajectories as the 2D plot but in a higher dimensional space.
     - **Right:** Line-graph displaying the relationship of the mean and standard-deviation of the hidden layer trajectories for each stimulus period.
 
-![2D PCA of neuronal trajectories](https://github.com/HA-141/QMUL-MSc-Research-Project/blob/main/images/pca_trajectories_2d_vibrant.png){: style="height:83px"}
+![2D PCA of neuronal trajectories](https://github.com/HA-141/QMUL-MSc-Research-Project/blob/main/images/pca_trajectories_2d_vibrant.png =250x250){: style="height:83px"}
 ![3D PCA of neuronal trajectories](https://github.com/HA-141/QMUL-MSc-Research-Project/blob/main/images/pca_trajectories_3d_vibrant.png){: style="height:83px"}
 ![Comparison of mean vs standard deviation of trajectory length at different periods](https://github.com/HA-141/QMUL-MSc-Research-Project/blob/main/images/trajectory_mean_vs_std_vibrant.png){: style="height:83px"}
 
