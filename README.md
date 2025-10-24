@@ -50,13 +50,10 @@ Consult ReadMe.txt to learn the order to how to run scripts
 ![Raster plot showing neuron activations of the hidden layer on a sample with a period of 0.6](https://github.com/HA-141/QMUL-MSc-Research-Project/blob/main/images/neuron_raster_peaks_period_0.6.png)
 ![Raster plot showing neuron activations of the hidden layer on a sample with a period of 0.95](https://github.com/HA-141/QMUL-MSc-Research-Project/blob/main/images/neuron_raster_peaks_period_0.95.png)
 
-**PCA Trajectory analysis:**
-
-    - **Left:** 2D PCA plot showing the trajectories of the PRNN's hidden layer neurons that is colour coded by stimulus frequency (from lowest to highest). Tap signals represented as black dots, yellow dots are the start of the sample trajectory, red dots represent end of sample trajectory. Dashed lines represent synchronisation phase and solid lines represent continuation phase.
-    
-    - **Middle:** 3D PCA plot showing same trajectories as the 2D plot but in a higher dimensional space.
-    
-    - **Right:** Line-graph displaying the relationship of the mean and standard-deviation of the hidden layer trajectories for each stimulus period.
+**PCA Trajectory analysis**:
+- **Left:** 2D PCA plot showing the trajectories of the PRNN's hidden layer neurons that is colour coded by stimulus frequency (from lowest to highest). Tap signals represented as black dots, yellow dots are the start of the sample trajectory, red dots represent end of sample trajectory. Dashed lines represent synchronisation phase and solid lines represent continuation phase.
+- **Middle:** 3D PCA plot showing same trajectories as the 2D plot but in a higher dimensional space.
+- **Right:** Line-graph displaying the relationship of the mean and standard-deviation of the hidden layer trajectories for each stimulus period.
 
 <table style="width: 100%; border: none;">
   <tr>
