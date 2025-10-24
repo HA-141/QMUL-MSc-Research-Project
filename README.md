@@ -1,7 +1,7 @@
 # QMUL-MSc-Research-Project
 A modified ZRNN model based on [Iran Roman's ZRNN model](https://github.com/iranroman/ZemlianovaRNN)
 
-This is a PyTorch implementation of the model described in the 2024 paper ["A Recurrent Neural Network for Rhythmic Timing"](https://www.biorxiv.org/content/10.1101/2024.05.24.595797v1.abstract) by Klavdia Zemlianova, Amit Bose, & John Rinzel. 
+This is a PyTorch implementation of the model described in the 2024 paper ["A Recurrent Neural Network for Rhythmic Timing"](https://www.biorxiv.org/content/10.1101/2024.05.24.595797v1.abstract) by Klavdia Zemlianova, Amit Bose, & John Rinzel [1]. 
 
 The model has been adapted from Iran Roman's model to explore and demonstrate the neural mechanisms behind the generation of the context cue signal needed for internal rhythmic timing and see if it can also replicate similar patterns.
 
@@ -32,9 +32,13 @@ Consult ReadMe.txt to learn the order to how to run scripts
 
 ### Visualising PRNN model outputs
 
+Tracking training and validation loss: training and validation losses (calculated using mean-squared error) tracked how well the PRNN model learned the patterns and generalise to different beat-frequencies. Also allows us to verify whether the model is under/over-fitting.
+
+![Line graph showing training and validation losses over time (epochs).](https://github.com/HA-141/QMUL-MSc-Research-Project/blob/main/images/training_validation_loss_period_prediction_lstm.png)
+
 
 ### Reference
-@article{zemlianova2024recurrent,
+[1] @article{zemlianova2024recurrent,
   title={A Recurrent Neural Network for Rhythmic Timing},
   author={Zemlianova, Klavdia and Bose, Amitabha and Rinzel, John},
   journal={bioRxiv},
