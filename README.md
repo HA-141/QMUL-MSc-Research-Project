@@ -44,7 +44,7 @@ Consult ReadMe.txt to learn the order to how to run scripts
 
 ![Line graphs showing prediction of the period for 6 samples over the whole sample duration](https://github.com/HA-141/QMUL-MSc-Research-Project/blob/main/images/test_true_vs_predicted_period.png)
 
-**Neuron activation analysis using raster plots:** raster plots showing neuron activity for the hidden layer. Colour coded to visualise positive and negative activations during synchronisation and continuation phase of the sample and samples with a period of 0.2 (left), 0.6 (middle), 0.95 (right).
+**Neuron activation analysis using raster plots:** raster plots showing neuron activity for the hidden layer. Colour coded to visualise positive and negative activations during synchronisation and continuation phase of the sample and samples with a period of 0.2 (Top), 0.6 (Middle), 0.95 (Bottom).
 
 ![Raster plot showing neuron activations of the hidden layer on a sample with a period of 0.2](https://github.com/HA-141/QMUL-MSc-Research-Project/blob/main/images/neuron_raster_peaks_period_0.2.png)
 ![Raster plot showing neuron activations of the hidden layer on a sample with a period of 0.6](https://github.com/HA-141/QMUL-MSc-Research-Project/blob/main/images/neuron_raster_peaks_period_0.6.png)
@@ -55,9 +55,9 @@ Consult ReadMe.txt to learn the order to how to run scripts
     - **Middle:** 3D PCA plot showing same trajectories as the 2D plot but in a higher dimensional space.
     - **Right:** Line-graph displaying the relationship of the mean and standard-deviation of the hidden layer trajectories for each stimulus period.
 
-![2D PCA of neuronal trajectories](https://github.com/HA-141/QMUL-MSc-Research-Project/blob/main/images/pca_trajectories_2d_vibrant.png)
-![3D PCA of neuronal trajectories](https://github.com/HA-141/QMUL-MSc-Research-Project/blob/main/images/pca_trajectories_3d_vibrant.png)
-![Comparison of mean vs standard deviation of trajectory length at different periods](https://github.com/HA-141/QMUL-MSc-Research-Project/blob/main/images/trajectory_mean_vs_std_vibrant.png)
+![2D PCA of neuronal trajectories](https://github.com/HA-141/QMUL-MSc-Research-Project/blob/main/images/pca_trajectories_2d_vibrant.png){: style="height:83px"}
+![3D PCA of neuronal trajectories](https://github.com/HA-141/QMUL-MSc-Research-Project/blob/main/images/pca_trajectories_3d_vibrant.png){: style="height:83px"}
+![Comparison of mean vs standard deviation of trajectory length at different periods](https://github.com/HA-141/QMUL-MSc-Research-Project/blob/main/images/trajectory_mean_vs_std_vibrant.png){: style="height:83px"}
 
 
 
