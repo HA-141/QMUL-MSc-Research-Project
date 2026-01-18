@@ -1,4 +1,7 @@
 # QMUL-MSc-Research-Project
+
+## Neural Clockworks: Decoding the Mechanisms of Temporal Dynamics with Recurrent Networks
+
 This is a PyTorch implementation of the model described in the 2024 paper ["A Recurrent Neural Network for Rhythmic Timing"](https://www.biorxiv.org/content/10.1101/2024.05.24.595797v1.abstract) by Klavdia Zemlianova, Amit Bose, & John Rinzel [1]. 
 The modified ZRNN model has been adapted from [Iran Roman's model](https://github.com/iranroman/ZemlianovaRNN) to explore and demonstrate the neural mechanisms behind the generation of the context cue signal needed for internal rhythmic timing and see if it can also replicate similar patterns.
 
