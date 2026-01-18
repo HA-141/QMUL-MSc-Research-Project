@@ -73,10 +73,11 @@ Consult ReadMe.txt to learn the order to how to run scripts
 ### Reference
 [1] @article{zemlianova2024recurrent,
   title={A Recurrent Neural Network for Rhythmic Timing},
-  author={Zemlianova, Klavdia and Bose, Amitabha and Rinzel, John},
+  author={Klavdia Zemlianova, Amitabha Bose, John Rinzel},
   journal={bioRxiv},
-  pages={2024--05},
   year={2024},
+  elocation-id={2024.05.15.594411},
+  doi={10.1101/2024.05.15.594411},
   publisher={Cold Spring Harbor Laboratory}
 }
 
