@@ -2,33 +2,28 @@
 
 ## Neural Clockworks: Decoding the Mechanisms of Temporal Dynamics with Recurrent Networks
 
-This is a PyTorch implementation of the model described in the 2024 paper ["A Recurrent Neural Network for Rhythmic Timing"](https://www.biorxiv.org/content/10.1101/2024.05.24.595797v1.abstract) by Klavdia Zemlianova, Amit Bose, & John Rinzel [1]. 
-The modified ZRNN model has been adapted from [Iran Roman's model](https://github.com/iranroman/ZemlianovaRNN) to explore and demonstrate the neural mechanisms behind the generation of the context cue signal needed for internal rhythmic timing and see if it can also replicate similar patterns.
+### Problem & Motivation
+Rhythmic timing is fundamental to human cognition, influencing everything from speech perception to musical performance. However, the neural mechanisms underlying how the brain maintains and perceives rhythm remain poorly understood. Prior work often relied on rule-based or entrainment-based models, which fail to capture the complexity of biological rhythmicity [1].
 
-### Features: 
-- A model, called the Period Predicting Recurrent Neural Network (PRNN) is used to count the period of a signal at each timestep, with its output being processed to produce the context cue signal
-- A modified ZRNN (IZRNN) that integrates the PRNN with the ZRNN, enabling the whole model to use a single input (stimulus impulses) to give similar results and neural mechanisms to rhythmic timing
-- Model paramters for both ZRNN and PRNN models can be configured to using their respective YAML files
-- Scripts available to train and test ZRNN and PRNN models separately and then test the integrated IZRNN with the separately trained models
-- GPU support available through CUDA, to enable efficient training and performance evaluations based on hardware
+The original Zemlianova RNN (ZRNN) model [2] replicated oscillatory dynamics of rhythmic timing but required an external "context cue" signal, limiting its biological plausibility. This project aimed to address this gap by developing a fully integrated recurrent neural network capable of internally generating the necessary context cues for rhythmic perception.
 
-Python Libraries used: 
-PyTorch: 2.7.0+cu118
-NumPy: 2.2.6
-Pandas: 2.2.3
-SciPy: 1.15.3
-Matplotlib: 3.10.3
-Scikit-learn: 1.6.1
-PyYAML: 6.0.2
+### Approach
+The project developed and integrated two key components:
 
-You can install these libraries using this prompt:
+Period-Predicting RNN (PRNN):
 
-```python
-pip install -r requirements.txt
-```
+A Long Short-Term Memory (LSTM)-based architecture trained to infer the period of an input rhythm from its impulse timing.
+Outputs a signal that predicts the periodicity of the input, enabling internal generation of the context cue.
+Integrated ZRNN (IZRNN):
 
+Combines the PRNN with the original ZRNN to create a fully self-sustaining model.
+Requires only the rhythm's impulse times as input, eliminating the need for external context cues.
+Key technical choices included:
 
-Consult ReadMe.txt to learn the order to how to run scripts
+Using LSTM architecture for its superior long-term memory capabilities in handling variable-length sequences.
+Implementing biological constraints such as excitatory/inhibitory neuron dynamics to align with neurophysiological findings.
+Employing PCA and raster plot analysis to study hidden layer dynamics and validate biological plausibility.
+
 
 ### Visualising PRNN model outputs
 
