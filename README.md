@@ -47,12 +47,12 @@ Raster plots provided insights into hidden layer dynamics:
 * Color-coded positive and negative activations highlighted rhythmic patterns during both synchronisation (input pulses) and continuation phases (no input).
 * Example raster plots for periods of 0.2s, 0.6s, and 0.95s demonstrated how the model maintained stable internal representations across different temporal scales.
 
-### PCA Trajectory Analysis
-Principal Component Analysis (PCA) revealed the low-dimensional structure of hidden layer dynamics:
-
 ![Raster plot showing neuron activations of the hidden layer on a sample with a period of 0.2](https://github.com/HA-141/QMUL-MSc-Research-Project/blob/main/images/neuron_raster_peaks_period_0.2.png)
 ![Raster plot showing neuron activations of the hidden layer on a sample with a period of 0.6](https://github.com/HA-141/QMUL-MSc-Research-Project/blob/main/images/neuron_raster_peaks_period_0.6.png)
 ![Raster plot showing neuron activations of the hidden layer on a sample with a period of 0.95](https://github.com/HA-141/QMUL-MSc-Research-Project/blob/main/images/neuron_raster_peaks_period_0.95.png)
+
+### PCA Trajectory Analysis
+Principal Component Analysis (PCA) revealed the low-dimensional structure of hidden layer dynamics:
 
 ### 2D & 3D PCA Plots:
 
@@ -86,22 +86,21 @@ Hidden layer activity exhibited oscillatory patterns consistent with biological 
 
 ![ZRNN hidden layer of IZRNN portion and context cue size vs its inter-peak interval](https://github.com/HA-141/QMUL-MSc-Research-Project/blob/main/images/IZRRN%20pca.png)
 
-### Limitations
-* The PRNN exhibited a gradual overestimation drift during continuation phases, contrasting with biological underestimation trends.
-* Current implementation focuses on isochronous rhythms; extension to more complex patterns remains an open challenge.
-
 ### Outcome
-This work successfully addressed the limitation of the original ZRNN by developing a fully integrated model capable of internally generating context cues for rhythmic perception. The results demonstrate that:
+This work successfully addressed the limitation of the original ZRNN by developing a fully integrated model capable of internally generating context cues for rhythmic perception, requiring only impulse timing as input rather than an external context signal.
 
 **Biological Plausibility:**
-* The IZRNN's dynamics align with known neural mechanisms, suggesting it could serve as a valuable tool for studying rhythmic timing in biological systems.
+Comparing the IZRNN's hidden layer activity and PCA trajectory structure against the original ZRNN revealed strong characteristic similarity between the two — the integrated model reproduced comparable firing dynamics and trajectory geometry despite generating its own context cue internally, suggesting the internally-generated signal is a functionally adequate substitute for the external one.
 
 **Technical Advancements:**
-* The integration of PRNN and ZRNN demonstrates the feasibility of creating distributed neural networks that mimic biological temporal processing.
+The integration of PRNN and ZRNN demonstrates the feasibility of building a self-sustaining recurrent network that mimics biological temporal processing without external scaffolding.
 
-**Future Directions:**
-* Addressing the overestimation drift and extending the model to handle more complex rhythms are critical next steps.
-* Exploring fully integrated training processes could improve biological realism and predictive accuracy.
+**Limitations & Future Directions:**
+* The PRNN showed a gradual overestimation drift during continuation phases, contrasting with biological underestimation trends — addressing this is a clear next step.
+* The current implementation is limited to isochronous rhythms; extending to more complex rhythmic patterns remains open.
+* A fully integrated (joint) training process, rather than training PRNN and ZRNN separately, could further improve biological realism.
+
+This project provides a foundation for future research into rhythm perception, temporal prediction, and motor timing, and the accompanying codebase is structured to let others reproduce, validate, and extend the work.
 
 ## Setup & Usage
 
@@ -174,16 +173,6 @@ python plot_IZRNN_temporal_dynamics.py --device cuda
 
 ---
 
-## Conclusion
-
-This project represents a significant step forward in understanding the neural mechanisms of rhythmic timing. By developing an integrated recurrent neural network capable of internally generating context cues, the model more closely aligns with biologically plausible neural computation.
-
-The results demonstrate the feasibility of using deep learning to study complex temporal dynamics while providing a foundation for future research into rhythm perception, temporal prediction, and motor timing.
-
-The accompanying codebase and documentation are intended to enable researchers to reproduce, validate, and extend this work, contributing to a deeper understanding of the neural basis of rhythmic timing.
-
----
-
 ## References
 
 1. <a id="ref1"></a>Zemlianova, K., Bose, A., & Rinzel, J. (2024). *A Recurrent Neural Network for Rhythmic Timing*.  
@@ -191,7 +180,3 @@ The accompanying codebase and documentation are intended to enable researchers t
 2. <a id="ref2"></a>Roman, I. *Original ZRNN implementation*.  
    https://github.com/iranroman/ZemlianovaRNN
 3. Relevant neurophysiological studies on rhythmic timing and temporal perception.
-
-
-
-
