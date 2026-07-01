@@ -82,8 +82,12 @@ Line graphs displayed the relationship between mean trajectory length and standa
 
 ### IZRNN Dynamics
 The integrated model replicated key features of the original ZRNN while operating with internally generated context cues.
+
+![Firing activity of the IZRNN](https://github.com/HA-141/QMUL-MSc-Research-Project/blob/main/images/IZRNN%20Activity%20map.png)
+
 Hidden layer activity exhibited oscillatory patterns consistent with biological neural populations, including distinct excitatory and inhibitory subpopulations.
 
+![ZRNN hidden layer of IZRNN portion and context cue size vs its inter-peak interval](https://github.com/HA-141/QMUL-MSc-Research-Project/blob/main/images/IZRRN%20pca.png)
 
 ### Limitations
 The PRNN exhibited a gradual overestimation drift during continuation phases, contrasting with biological underestimation trends.
