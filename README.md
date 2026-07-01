@@ -25,30 +25,43 @@ Implementing biological constraints such as excitatory/inhibitory neuron dynamic
 Employing PCA and raster plot analysis to study hidden layer dynamics and validate biological plausibility.
 
 
-### Visualising PRNN model outputs
 
-**Tracking training and validation loss:** training and validation losses (calculated using mean-squared error) tracked how well the PRNN model learned the patterns and generalise to different beat-frequencies. Also allows us to verify whether the model is under/over-fitting.
+### Results
+The project achieved several key results, visualized through detailed figures and analyses:
+
+### PRNN Performance
+Training & Validation Loss: Tracking training and validation losses (calculated using mean-squared error) revealed how well the PRNN model learned patterns and generalized to different beat frequencies. The loss curves indicated effective learning without signs of overfitting.
+
+Key Metrics: Mean Absolute Error = 0.0159, R² coefficient = 0.9972.
 
 ![Line graph showing training and validation losses over time (epochs).](https://github.com/HA-141/QMUL-MSc-Research-Project/blob/main/images/training_validation_loss_period_prediction_lstm.png)
 
-**Predicted vs True time period of a beat:** shows predictions of PRNN after testing, with a fitted regression line that can be compared against the ideal prediction line
+Predicted vs True Period: Scatter plots showed PRNN predictions against true values, with a fitted regression line closely aligning with the ideal prediction line (y=x). This demonstrated strong predictive accuracy across different periods.
 
 ![Scatter graph showing predictions vs actual value.](https://github.com/HA-141/QMUL-MSc-Research-Project/blob/main/images/test_true_vs_predicted_period.png)
 
-**Predicted period of a sample throughout whole duration:** maps out the PRNN's predicted vs true period of six samples during the whole duration of the sample to analyse change in prediction over time
+Predicted Period Over Time: Line graphs mapped out the PRNN's predicted vs true period for six samples throughout their full duration. These visualizations revealed consistent tracking of periodicity, even during extended continuation phases.
 
-![Line graphs showing prediction of the period for 6 samples over the whole sample duration](https://github.com/HA-141/QMUL-MSc-Research-Project/blob/main/images/test_true_vs_predicted_period.png)
+![Line graphs showing prediction of the period for 6 samples over the whole sample duration](https://github.com/HA-141/QMUL-MSc-Research-Project/blob/main/images/period_comparison_overlay.png)
 
-**Neuron activation analysis using raster plots:** raster plots showing neuron activity for the hidden layer. Colour coded to visualise positive and negative activations during synchronisation and continuation phase of the sample and samples with a period of 0.2 (Top), 0.6 (Middle), 0.95 (Bottom).
+
+### Neuron Activation Analysis
+Raster plots provided insights into hidden layer dynamics:
+
+Color-coded positive and negative activations highlighted rhythmic patterns during both synchronisation (input pulses) and continuation phases (no input).
+Example raster plots for periods of 0.2s, 0.6s, and 0.95s demonstrated how the model maintained stable internal representations across different temporal scales.
+PCA Trajectory Analysis
+Principal Component Analysis (PCA) revealed the low-dimensional structure of hidden layer dynamics:
 
 ![Raster plot showing neuron activations of the hidden layer on a sample with a period of 0.2](https://github.com/HA-141/QMUL-MSc-Research-Project/blob/main/images/neuron_raster_peaks_period_0.2.png)
 ![Raster plot showing neuron activations of the hidden layer on a sample with a period of 0.6](https://github.com/HA-141/QMUL-MSc-Research-Project/blob/main/images/neuron_raster_peaks_period_0.6.png)
 ![Raster plot showing neuron activations of the hidden layer on a sample with a period of 0.95](https://github.com/HA-141/QMUL-MSc-Research-Project/blob/main/images/neuron_raster_peaks_period_0.95.png)
 
-**PCA Trajectory analysis**:
-- **Left:** 2D PCA plot showing the trajectories of the PRNN's hidden layer neurons that is colour coded by stimulus frequency (from lowest to highest). Tap signals represented as black dots, yellow dots are the start of the sample trajectory, red dots represent end of sample trajectory. Dashed lines represent synchronisation phase and solid lines represent continuation phase.
-- **Middle:** 3D PCA plot showing same trajectories as the 2D plot but in a higher dimensional space.
-- **Right:** Line-graph displaying the relationship of the mean and standard-deviation of the hidden layer trajectories for each stimulus period.
+### 2D & 3D PCA Plots:
+
+Colored trajectories showed stimulus frequency-dependent patterns, with black dots marking tap times.
+Yellow and red dots marked trajectory start and end points, respectively.
+Dashed lines represented synchronisation phase trajectories, while solid lines showed continuation phase dynamics.
 
 <table style="width: 100%; border: none;">
   <tr>
@@ -58,11 +71,26 @@ Employing PCA and raster plot analysis to study hidden layer dynamics and valida
     <td style="width: 33%; text-align: center; border: none; padding: none;">
       <img src="https://raw.githubusercontent.com/HA-141/QMUL-MSc-Research-Project/main/images/pca_trajectories_3d_vibrant.png" alt="3D PCA of neuronal trajectories" width="400" height="400">
     </td>
-    <td style="width: 34%; text-align: center; border: none; padding: none;">
-      <img src="https://raw.githubusercontent.com/HA-141/QMUL-MSc-Research-Project/main/images/trajectory_mean_vs_std_vibrant.png" alt="Comparison of mean vs standard deviation of trajectory length" width="400" height="400">
-    </td>
   </tr>
 </table>
+
+### Mean vs Standard Deviation of Trajectories:
+
+Line graphs displayed the relationship between mean trajectory length and standard deviation for different stimulus periods, highlighting consistent internal representations across frequencies.
+
+ <img src="https://raw.githubusercontent.com/HA-141/QMUL-MSc-Research-Project/main/images/trajectory_mean_vs_std_vibrant.png" alt="Comparison of mean vs standard deviation of trajectory length" width="400" height="400">
+
+### IZRNN Dynamics
+The integrated model replicated key features of the original ZRNN while operating with internally generated context cues.
+Hidden layer activity exhibited oscillatory patterns consistent with biological neural populations, including distinct excitatory and inhibitory subpopulations.
+
+
+### Limitations
+The PRNN exhibited a gradual overestimation drift during continuation phases, contrasting with biological underestimation trends.
+Current implementation focuses on isochronous rhythms; extension to more complex patterns remains an open challenge.
+
+
+
 
 
 ### Reference
