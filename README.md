@@ -174,6 +174,16 @@ python plot_IZRNN_temporal_dynamics.py --device cuda
 
 ---
 
+## Conclusion
+
+This project represents a significant step forward in understanding the neural mechanisms of rhythmic timing. By developing an integrated recurrent neural network capable of internally generating context cues, the model more closely aligns with biologically plausible neural computation.
+
+The results demonstrate the feasibility of using deep learning to study complex temporal dynamics while providing a foundation for future research into rhythm perception, temporal prediction, and motor timing.
+
+The accompanying codebase and documentation are intended to enable researchers to reproduce, validate, and extend this work, contributing to a deeper understanding of the neural basis of rhythmic timing.
+
+---
+
 ## References
 
 1. <a id="ref1"></a>Zemlianova, K., Bose, A., & Rinzel, J. (2024). *A Recurrent Neural Network for Rhythmic Timing*.  
@@ -182,14 +192,6 @@ python plot_IZRNN_temporal_dynamics.py --device cuda
    https://github.com/iranroman/ZemlianovaRNN
 3. Relevant neurophysiological studies on rhythmic timing and temporal perception.
 
----
 
-## Conclusion
-
-This project represents a significant step forward in understanding the neural mechanisms of rhythmic timing. By developing an integrated recurrent neural network capable of internally generating context cues, the model more closely aligns with biologically plausible neural computation.
-
-The results demonstrate the feasibility of using deep learning to study complex temporal dynamics while providing a foundation for future research into rhythm perception, temporal prediction, and motor timing.
-
-The accompanying codebase and documentation are intended to enable researchers to reproduce, validate, and extend this work, contributing to a deeper understanding of the neural basis of rhythmic timing.
 
 
